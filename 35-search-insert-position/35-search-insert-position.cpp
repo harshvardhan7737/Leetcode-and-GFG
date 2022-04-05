@@ -7,9 +7,11 @@ public:
         int mid = l+((r-l)/2);
         
         while(l<=r)
-        {
+        { 
+            mid = l+((r-l)/2);
+            
             if(nums[mid]==target)
-                return mid;
+            return mid;
             
             else if(nums[mid]<target)
             {
@@ -19,9 +21,9 @@ public:
             {
                 r = mid-1;
             }
-            mid = l+((r-l)/2);
+
         }
-        return mid;
+        return l;
         
     }
 };
