@@ -30,12 +30,10 @@ public:
                 if(temp->val == val  && temp->next == NULL)
                 {
                     prevNode->next = NULL;
-                    // delete temp;
                 }   
                 else if(temp->val == val)
                 {
                     prevNode->next = temp->next;
-                    // delete temp;
                 }   
                 else
                 prevNode = temp;
