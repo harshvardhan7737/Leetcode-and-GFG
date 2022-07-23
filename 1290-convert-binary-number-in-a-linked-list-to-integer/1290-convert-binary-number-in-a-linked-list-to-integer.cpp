@@ -12,17 +12,17 @@ class Solution {
 public:
     int getDecimalValue(ListNode* head) {
         
-        string ans = {};
-        string a;
+        // string ans = {};
+        // string a;
+        int val = 0;
         while(head!=NULL)
         {
-            a = to_string(head->val);
-            ans+=a;
+            val = val*2 + head->val;
             head=head->next;
         }
         
-        int res = stoi(ans, 0, 2);
-        return res;
+
+        return val;
         
     }
 };
