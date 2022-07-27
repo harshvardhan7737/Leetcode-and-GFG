@@ -25,13 +25,7 @@ public:
         
         bool left = solve(root->left, targetSum - root->val);
         bool right = solve(root->right, targetSum - root->val);
-        
-        //  if(root==NULL)
-        //     return false;
-        // if(root->val==targetSum && root->left==NULL && root->right==NULL)
-        //     return true;
-        // bool left= solve(root->left,targetSum-root->val);
-        // bool right= solve(root->right,targetSum-root->val);
+    
         
         return (left || right);
     
