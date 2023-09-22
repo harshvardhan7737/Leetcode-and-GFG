@@ -17,12 +17,9 @@ class Solution{
         long long sum1 = 0, sum2 = 0;
             sum1 += a[low];
             sum2 += a[high];  
-          //  cout << sum1 << " " << sum2 << endl;
 
         while(low < high)
         {
-            // cout << sum1 << " " << sum2 << endl;
-
             if(sum1 > sum2)
             {
                 high--;
